@@ -20,5 +20,8 @@ public class Main {
 		}catch(IllegalArgumentException|InsufficientFundsException| UnsupportedOperationException e){
 			System.out.println(e);
 		}
+		System.out.println("This is for Git");
+
 	}
+	
 }
