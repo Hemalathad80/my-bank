@@ -72,7 +72,7 @@ class CheckingAccountTest {
 			account.withdraw(amount);
 		});
 
-		assertTrue(account.getBalance() > amount, "You can withdraw");
+		//assertTrue(account.getBalance() > amount, "You can withdraw");
 
 	}
 
@@ -94,15 +94,17 @@ class CheckingAccountTest {
 	}
 
 	@Test
-	void withdraw__amount_equal_to_balance() {
+	void withdraw__amount_equal_to_balance__works()  {
 
 		double amount = 42.0;
 		double balance = account.getBalance();
-		// account.withdraw(amount);
+		//account.withdraw(amount);
 
+		
 		
 		  assertThrows(IllegalArgumentException.class, () -> {
 		  account.withdraw(amount); });
+		 
 		 
 
 		assertTrue(amount == balance, "You can withdraw");
